@@ -544,9 +544,7 @@ JitsiConference.prototype.isJoined = function() {
  * @return {boolean}
  */
 JitsiConference.prototype.isJVBEnabled = function() {
-    // FIXME: remove once we have a default config template.
-    return typeof this.options.config.jvbEnabled === 'undefined'
-        || Boolean(this.options.config.jvbEnabled);
+    return false;
 };
 
 /**
